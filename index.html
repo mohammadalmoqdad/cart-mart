@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="#" class="logo">
+                    <img src="https://js-beginners.github.io/grocery-cart-project/img/logo.svg" alt="">
+                </a>
+            </div>
+
+            <span class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+
+            <div class="main-menu-container">
+                <ul class="menu-bar ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#store-heading">Store</a></li>
+                </ul>
+
+                <div class="cart-phone-container">
+                    <span class="phoneNumber">
+                        <i class="fas fa-phone"></i>
+                        <span> + 123 456 789 </span>
+                    </span>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <!-- I need to  make the value of the button as dynamic -->
+                        <span id="cart-items-price">
+                            3 Items - $31.98
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduction-container">
+            <div class="hidden-cart-container test">
+                <ul id="cart-items">
+                </ul>
+                <div class="total-container">
+                    <p>
+                        Total
+                    </p>
+                    <p class="total">
+                        $ 10.00
+                    </p>
+                </div>
+                <div class="clear-checkout-container">
+                    <button id="clear-cart">
+                        Clear Cart
+                    </button>
+                    <button>
+                        Checkout
+                    </button>
+                </div>
+            </div>
+
+            <p class="introduction">
+                Welcome To <span>Grandma's</span>
+            </p>
+            <button class="explore">
+                Explore
+            </button>
+        </section>
+
+        <section class="second-main-container" id="about">
+            <div class="about-us-container">
+                <span class="about-us-heading">
+                    About <span> Us </span>
+                </span>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae
+                    expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
+                    porro at dolorum! Ad!
+                </p>
+                <button>
+                    Explore
+                </button>
+            </div>
+
+            <div class="cake-image-container" id="store">
+                <div class="image-border">
+                </div>
+                <img src="https://js-beginners.github.io/grocery-cart-project/img/sweets-1.jpeg" alt="some cake">
+            </div>
+        </section>
+        <section class="categoris-items-container">
+            <p id="store-heading">
+                Our <span>Store</span>
+            </p>
+            <div class="categories">
+                <!-- move the id to the buttons and delete the a's -->
+                <a href="#store-heading" id="all"><button>All</button></a>
+                <a href="#store-heading" id="cakes"><button>Cakes</button></a>
+                <a href="#store-heading" id="cupcake"><button>Copcakes</button></a>
+                <a href="#store-heading" id="sweet"><button>Sweet</button></a>
+                <a href="#store-heading" id="doughnuts"><button>Doughnuts</button></a>
+            </div>
+            <form action="" id="categories-form">
+                <div class="button-search-container">
+                    <button class="submit-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" name="searchItem" placeholder="item....">
+                </div>
+            </form>
+            <div class="items">
+
+            </div>
+        </section>
+    </main>
+    <!-- <div class="test">
+        <img src="./assets/headerBcg.jpeg" alt="">
+
+        <img src="https://js-beginners.github.io/filter-project/img/sweets-1.jpeg" alt="">
+    </div> -->
+
+
+
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
+
+<!-- create a variale in CSS for the buttons -->
