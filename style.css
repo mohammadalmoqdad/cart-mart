@@ -90,7 +90,7 @@ main .introduction-container {
     background-size: cover;
     background-position: center;
     height: 92vh;
-    background-image: linear-gradient(#fdeba18a, #fdeba18a), url('./assets/headerBcg.jpeg');
+    background-image: linear-gradient(#fdeba18a, #fdeba18a), url('./headerBcg.jpeg');
     background-attachment: fixed;
     display: flex;
     justify-content: center;
